@@ -78,7 +78,7 @@ const QuizPage = () => {
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
         if (!question) return;
-        const { data: activeQuestion, error } = await supabase
+        const { data: activeQuestion } = await supabase
             .from("questions")
             .select("*")
             .eq("question", question.question)

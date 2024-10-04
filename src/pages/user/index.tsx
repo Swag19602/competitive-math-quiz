@@ -40,6 +40,8 @@ const UserPage = () => {
             if (insertError) {
                 console.error('Error saving user: ' + insertError.message);
                 return;
+            }else if(data){
+                console.log('entered succesfully')
             }
 
             // Store the newly created user ID and redirect to the quiz page

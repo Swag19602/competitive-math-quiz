@@ -1,7 +1,7 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
-const GEMINI_API_URL =
-  "https://generativelanguage.googleapis.com/v1beta2/models/text-bison-001:generateText";
+// const GEMINI_API_URL =
+//   "https://generativelanguage.googleapis.com/v1beta2/models/text-bison-001:generateText";
 const apiKey =
   process.env.GEMINI_API_KEY || "AIzaSyAUwgaznaRgaq7Ml7wlPlBx9VKuGjZpv4Q";
 

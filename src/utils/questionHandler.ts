@@ -39,7 +39,7 @@ export const getOrCreateQuestion = async () => {
   }
   console.log(newQuestion, 'new question')
   // Step 5: Insert the new unique question into Supabase and mark it as active
-  const { data: insertedQuestion, error: insertError } = await supabase
+  const { data, error: insertError } = await supabase
     .from("questions")
     .insert({ question: newQuestion, active: true })
     .single();
@@ -47,12 +47,14 @@ export const getOrCreateQuestion = async () => {
   if (insertError) {
     throw new Error(`Error creating new question: ${insertError.message}`);
   }
-
+  if(data){
+    console.info('question generated inserted')
+  }
   return newQuestion;
 };
 
 // Mark the current question as inactive
-export const markQuestionInactive = async (question:any, user_name: string) => {
+export const markQuestionInactive = async (question:string, user_name: string) => {
 
   const { error } = await supabase
     .from("questions")
