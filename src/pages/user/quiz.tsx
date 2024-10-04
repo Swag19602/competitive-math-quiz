@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { supabase } from '../supabaseClient'; // Import the Supabase client
+import { supabase } from '../../utils/supabaseClient'; // Import the Supabase client
 import { useRouter } from 'next/router';
 import { getOrCreateQuestion, markQuestionInactive } from '@/utils/questionHandler';
 import { checkAnswer, fetchCorrectAnswer } from '@/utils/gemini';

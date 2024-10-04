@@ -1,4 +1,4 @@
-import { supabase } from "../pages/supabaseClient";
+import { supabase } from "./supabaseClient";
 
 // Update the user's score if it's higher than the current score
 const updateUserScore = async (user_name:string, newScore:number) => {

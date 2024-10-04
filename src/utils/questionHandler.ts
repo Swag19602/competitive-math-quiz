@@ -1,4 +1,4 @@
-import {supabase} from '../pages/supabaseClient'
+import {supabase} from './supabaseClient'
 import { generateMathQuestion } from './gemini';
 // import fetchFromGemini from './gemini'
 

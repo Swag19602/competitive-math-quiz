@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { supabase } from '../supabaseClient'; // Import your Supabase client
+import { supabase } from '../../utils/supabaseClient'; // Import your Supabase client
 import { useRouter } from 'next/navigation';
 
 interface User {
