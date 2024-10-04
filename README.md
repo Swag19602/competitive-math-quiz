@@ -54,3 +54,8 @@ GEMINI_API_KEY=<your_gemini_api_key>
                 npm run dev
         ```
 The app will be running at http://localhost:3000.
+
+
+## Deployed APP 
+ - **Test the app here live deployed in vercel**
+    - https://competitive-math-quiz.vercel.app/
